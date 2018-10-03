@@ -1,16 +1,12 @@
 package com.amazon.app.utility;
 
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 //import java.util.logging.Logger;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -23,7 +19,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtility {
 	// public static void main( String[] args ) throws IOException
 
-	
 	public static ArrayList<String> readFile(String path, String excel,
 			String sheet, String Testcase) throws IOException {
 		System.out.println("*********Enter readFile*********");
@@ -45,19 +40,18 @@ public class ExcelUtility {
 			// Create a loop to print cell value over each row
 			for (int j = 0; j < r.getLastCellNum(); j++) {
 				// read all the data from the rows
-				 System.out.print(r.getCell(j).getStringCellValue()+"|| ");
+				System.out.print(r.getCell(j).getStringCellValue() + "|| ");
 
 				// Condition to find specific data from the first row
 				if (r.getCell(j).getStringCellValue().contains("TC")) {
 					// loop to read the cell value for specific row
-						Cell c = sh.getRow(i).getCell(2);
-					
-						a.add(c.getStringCellValue());
-						
-					}
-				}
-			System.out.println(" ");
+					Cell c = sh.getRow(i).getCell(2);
 
+					a.add(c.getStringCellValue());
+
+				}
+			}
+			System.out.println(" ");
 
 		}
 		fis.close();
@@ -65,4 +59,4 @@ public class ExcelUtility {
 		return a;
 	}
 
-	}
+}

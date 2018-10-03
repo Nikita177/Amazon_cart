@@ -8,7 +8,7 @@ public class AmazonHomePage {
 	By hmSearchbx = By.id("twotabsearchtextbox");
 	By hmSearchBtn = By.xpath("//input[@value='Go']");
 	By hmResult = By
-			 .xpath("//li[@id='result_0']//img[@class='s-access-image cfMarker']");
+			.xpath("//li[@id='result_0']//img[@class='s-access-image cfMarker']");
 	By hmAddCartbtn = By.id("add-to-cart-button");
 	By hmAddCartLink = By.id("nav-cart");
 	By hmCartValue = By.id("a-autoid-0-announce");
