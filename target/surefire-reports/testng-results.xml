@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="48306" started-at="2018-10-03T02:31:24Z" finished-at="2018-10-03T02:32:13Z">
+  <suite name="Suite" duration-ms="43919" started-at="2018-10-04T19:11:13Z" finished-at="2018-10-04T19:11:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="48306" started-at="2018-10-03T02:31:24Z" finished-at="2018-10-03T02:32:13Z">
+    <test name="Test" duration-ms="43919" started-at="2018-10-04T19:11:13Z" finished-at="2018-10-04T19:11:57Z">
       <class name="com.amazon.app.AmazonTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.app.AmazonTest@729405ca]" name="setUp" is-config="true" duration-ms="4351" started-at="2018-10-03T02:31:24Z" finished-at="2018-10-03T02:31:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.app.AmazonTest@4c64881d]" name="setUp" is-config="true" duration-ms="4525" started-at="2018-10-04T19:11:13Z" finished-at="2018-10-04T19:11:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddtoCart()[pri:0, instance:com.amazon.app.AmazonTest@729405ca]" name="testAddtoCart" duration-ms="43938" started-at="2018-10-03T02:31:29Z" finished-at="2018-10-03T02:32:13Z">
+        <test-method status="PASS" signature="testAddtoCart()[pri:0, instance:com.amazon.app.AmazonTest@4c64881d]" name="testAddtoCart" duration-ms="39375" started-at="2018-10-04T19:11:18Z" finished-at="2018-10-04T19:11:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddtoCart -->
